@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none!important;
+    outline: none!important;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+background-color:#1f242d!important;
+width: 100vw;
+}
+section{
+color: white!important;
+background-color: #1f242d;
+}
+.headerList a{
+    color: white!important;
+}
+.heading{
+    color: white;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.span{
+     color: white;
+     font-size: 25px;
+     font-weight: bold;
+    
+
+}
+.sectionCols{ 
+     padding-top: 120px;
+}
+
+
+.clickig{
+    display: none;
+}
+.spaning{
+    display: none;
+}
+
+ .header3{
+    font-weight: bold;
+ }
+ .heading1{
+    font-weight: bolder;
+    font-size: 43px;
+ }
+ .sectionSpan{
+    font-size: 31px;
+    font-weight: 740;
+ }
+/* .peragraph {
+  text-align: justify;
+  line-height: 1.6;
+  max-width: 600px;
+} */
+ .peragraph {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.peragraph::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+#menuBtn span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+/* Cross banane ke liye */
+#menuBtn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+#menuBtn.active span:nth-child(2) {
+    opacity: 0;
+}
+#menuBtn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}

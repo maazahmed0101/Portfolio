@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <!-- css -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- boxicos -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!--favicon  -->
+    <link rel="shortcut icon" href="./assetss/images/pic.png" type="image/x-icon">
+    <!-- google Font Cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/MediaQuery.css">
+</head>
+
+<body>
+    <div class="MainContainer container-fluid p-0 ">
+        <header class="container-fluid header  d-flex align-items-center position-sticky shadow-lg">
+            <nav class="container-fluid navbar navbar-expand-lg d-flex justify-content-center">
+                <div class="container row p-0 ">
+                    <div class="col-lg-6 firstColumn d-flex justify-content-between ">
+                        <a class="navbar-brand heading" href="#">Portfolio</a>
+                        <!-- <button class="navbar-toggler headerButton" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                            <span class="toggler-icon span ">☰ <span class="clickig"> ✖span> </span>
+                        </button> -->
+                        <button class="navbar-toggler header " id="menuBtn" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="col-lg-6 secoundColumn ">
+                        <div class="collapse navbar-collapse headerList " id="navbarNav">
+                            <ul class="navbar-nav w-100 d-flex justify-content-between">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="container-fluid d-flex justify-content-lg-center p-0">
+            <div class="container row p-0 justify-content-center">
+                <div class="col-lg-6 sectionCols ">
+                    <h3 class="header3">Hello, Its Me</h3>
+                    <h1 class="heading1 my-1">Maaz Ahmed</h1>
+                    <h3 class="header3"> I'm a <span class="sectionSpan">Frontent Developer</span></h3>
+
+                    <p class="pt-3 peragraph">
+                        I am a passionate and innovative web developer on a mission to shape digital experiences that
+                        captivate and inspire. With a year of dedicated hands-on experience in the world of web
+                        development, I've cultivated a profound love for crafting pixel-perfect, user-centric websites.
+                    </p>
+
+                    <div class="pt-0 mt-0">
+                        <a href="https://github.com/maazahmed0101" target="_blank"><i class="bx bxl-github"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-asif-bb8107295" target="_blank"><i
+                                class="bx bxl-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+        </section>
+    </div>
+
+    <script id="3c6r19">
+        const btn = document.getElementById('menuBtn');
+
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('active');
+        });
+    </script>
+    <script src="Js/app.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
