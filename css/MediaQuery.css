@@ -1,4 +1,61 @@
-@media (max-width:768px) {
+/* @media (max-width:768px) {
 
     }
+ */
 
+ :root {
+  --text-color: #333;
+  --cursor-color: #007bff;
+  --bg-color: #f4f4f4;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  display: flex;
+}
+
+.static-text {
+  margin-right: 10px;
+}
+
+/* .typing-text {
+  position: relative;
+  color: var(--cursor-color);
+  white-space: nowrap;
+  overflow: hidden; /* Text ko hide karne ke liye */
+  /* border-right: 3px solid var(--cursor-color); Yeh hamara cursor hai */
+  /* width: 0; Shuruat mein width zero hogi */
+  
+  /* Animation combine karna: typing, blinking, aur erasing */
+  /* animation:  */
+    /* typing 4s steps(18) infinite, */
+    /* cursor-blink 0.8s step-end infinite; */
+/* }  */
+.typing-text {
+  position: relative;
+  color: var(--cursor-color);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid var(--cursor-color);
+  width: 0;
+  animation: typing 4s steps(18) infinite, cursor-blink 0.8s step-end infinite;
+}
+
+/* Typing aur Erasing ka Logic */
+@keyframes typing {
+  0%, 10% { width: 0; } /* Intezar */
+  40%, 60% { width: 100%; } /* Type ho gaya aur thodi der ruka (yahan cursor blink karega) */
+  90%, 100% { width: 0; } /* Erase ho gaya */
+}
+
+/* Cursor Blinking ka Logic */
+@keyframes cursor-blink {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--cursor-color); }
+}

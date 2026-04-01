@@ -1,84 +1,70 @@
+:root {
+    --cursor-color: #007bff;
+}
+
+/* RESET */
 * {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none!important;
-    outline: none!important;
-    scroll-behavior: smooth;
+    text-decoration: none !important;
     font-family: 'Poppins', sans-serif;
 }
 
-header{
-background-color:#1f242d!important;
-width: 100vw;
+/* HEADER */
+.header {
+    background: #1f242d;
+    position: sticky;
 }
-section{
-color: white!important;
-background-color: #1f242d;
+
+.nav-link {
+    color: white !important;
 }
-.headerList a{
-    color: white!important;
-}
-.heading{
+
+.heading {
     color: white;
-    font-size: 28px;
-    font-weight: bolder;
-}
-
-.span{
-     color: white;
-     font-size: 25px;
-     font-weight: bold;
-    
-
-}
-.sectionCols{ 
-     padding-top: 120px;
-}
-
-
-.clickig{
-    display: none;
-}
-.spaning{
-    display: none;
-}
-
- .header3{
     font-weight: bold;
- }
- .heading1{
-    font-weight: bolder;
-    font-size: 43px;
- }
- .sectionSpan{
-    font-size: 31px;
-    font-weight: 740;
- }
-/* .peragraph {
-  text-align: justify;
-  line-height: 1.6;
-  max-width: 600px;
-} */
- .peragraph {
-  text-align: justify;
-  line-height: 1.6;
+    font-size: 28px;
 }
 
-.peragraph::after {
-  content: "";
-  display: inline-block;
-  width: 100%;
+/* SECTION */
+.main-section {
+    background: #1f242d;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    /* padding: 80px 0; */
 }
+
+.heading1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/* PARAGRAPH */
+.peragraph {
+    line-height: 1.6;
+    text-align: justify;
+    /* text-align-last: center; */
+}
+
+/* SOCIAL ICONS */
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* MENU BUTTON */
 #menuBtn span {
     display: block;
-    height: 3px;
     width: 25px;
+    height: 3px;
     background: white;
     margin: 5px;
     transition: 0.3s;
 }
 
-/* Cross banane ke liye */
 #menuBtn.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -87,4 +73,168 @@ background-color: #1f242d;
 }
 #menuBtn.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* FLOAT IMAGE */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.floating-img {
+    animation: float 5s ease-in-out infinite;
+}
+#typing-text{
+    color: #007bff;
+    font-weight: bold;
+}
+.cursor{
+    color: #007bff;
+    font-weight: 100;
+    animation: flash 0.8s infinite;
+}
+@keyframes flash{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.heroimage img{
+    overflow: hidden;
+    width: 96%;
+}
+.github{
+    padding: 5px;
+  
+    font-size: xx-large;
+    transition: all linear 0.4s;
+}
+.github:hover{
+    /* background-color: blue; */
+    background-color: aqua;
+    object-fit: cover;
+    color: black;
+    font-size: xx-large;
+    border-radius: 100pc;
+    border: 1px solid aqua;
+    box-shadow: 0 0 20px aqua;
+}
+.linkDin{
+    padding: 8px;
+  
+    font-size: x-large;
+    transition: all linear 0.4s;
+}
+.linkDin:hover{
+   background-color: aqua;
+    object-fit: cover;
+    /* color: black; */
+    font-size: x-large;
+    color: black;
+    border-radius: 100pc;
+    border: 1px solid aqua;
+    box-shadow: 0 0 20px aqua; 
+}
+/* ========================= */
+/* RESPONSIVE (MOBILE + TAB) */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+    .main-section {
+        height: auto; /* fix height issue */
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .heading1 {
+        font-size: 36px;
+    }
+
+    .heroimage {
+        padding: 20px !important;
+    }
+
+    .heroimage img {
+        width: 80%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+   
+    .heading {
+        font-size: 22px;
+    }
+
+    .heading1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .peragraph {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .heroimage img {
+        width: 90%;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+
+    /* Navbar spacing */
+    .navbar-nav {
+        gap: 10px;
+        padding-top: 10px;
+    }
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.reveal-left {
+    opacity: 0; /* Shuru mein gayab */
+    transform: translateX(-100px); /* 100px pichay (left side) */
+    animation: moveIn 0.8s ease-out forwards; /* 1.2 seconds mein aayega */
+}
+.reveal-lef {
+    opacity: 0; /* Shuru mein gayab */
+    transform: translateX(-100px); /* 100px pichay (left side) */
+    animation: moveIn 4.2s ease-out forwards; /* 1.2 seconds mein aayega */
+    animation-delay: 0.3s; /* Thoda ruk kar aayega, jo cool lagta hai */
+}
+
+.reveal-right {
+    opacity: 0; /* Shuru mein gayab */
+    transform: translateX(100px); /* 100px aagay (right side) */
+    animation: moveIn 1.2s ease-out forwards;
+    animation-delay: 0.3s; /* Thoda ruk kar aayega, jo cool lagta hai */
+}
+.reveal-righ {
+    opacity: 0; /* Shuru mein gayab */
+    transform: translateX(100px); /* 100px aagay (right side) */
+    animation: moveIn 2.0s ease-out forwards;
+    animation-delay: 1.2s; /* Thoda ruk kar aayega, jo cool lagta hai */
+}
+
+@keyframes moveIn {
+    to {
+        opacity: 1; /* Poora nazar aaye */
+        transform: translateX(0); /* Apni asli jagah (0) par aa jaye */
+    }
 }
