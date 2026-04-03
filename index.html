@@ -15,81 +15,198 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/MediaQuery.css">
 </head>
 
 <body>
 
-<div class="container-fluid p-0">
+    <div class="container-fluid p-0">
 
-    <!-- HEADER -->
-    <header class="header shadow-lg">
-        <nav class="navbar navbar-expand-lg container">
-            
-            <a class="navbar-brand heading" href="#">Portfolio</a>
+        <!-- HEADER -->
+        <header class="header ">
+            <nav class="navbar navbar-expand-lg container">
 
-            <button class="navbar-toggler" id="menuBtn" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+                <a class="navbar-brand heading" href="#">Portfolio</a>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-center">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
+                <button class="navbar-toggler" id="menuBtn" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center headerLi">
+                        <li class="nav-item"><a class="nav-link active" href="#Home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Service">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+
+        <!-- SECTION -->
+        <section class="main-section d-flex align-items-center" id="Home">
+            <div class="container d-flex align-items-center p-0">
+                <div class="row align-items-center hero-section ">
+
+                    <div class="col-lg-6">
+                        <h3 class="reveal-left">Hello, It's Me</h3>
+                        <h1 class="heading1 reveal-righ">Maaz Ahmed</h1>
+
+                        <h3 class="reveal-left">
+                            I'm a <span id="typing-text"></span> <span class="cursor">|</span>
+                        </h3>
+                        <audio id="typeSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+                        <p class="peragraph  reveal-left">
+                            I am a passionate and innovative web developer on a mission to shape digital experiences
+                            that captivate and inspire. With a year of dedicated hands-on experience in the world of web
+                            development, I've cultivated a profound love for crafting pixel-perfect, user-centric
+                            websites.
+                        </p>
+
+                        <div class="social-icons d-flex">
+                            <a href="#"><i class="bx bxl-github github"></i></a>
+                            <a href="#"><i class="bx bxl-linkedin linkDin"></i></a>
+                        </div>
+                        <button class="headerBtn mt-4">Download</button>
+                    </div>
+
+                    <div class="col-lg-6 text-center heroimage p-5 mt-5 reveal-right">
+                        <img src="images/my-img.png  " class=" floating-img img-fluid " alt="">
+                    </div>
+
+                </div>
             </div>
-
-        </nav>
-    </header>
-
-    <!-- SECTION -->
-    <section class="main-section">
-        <div class="container">
-            <div class="row align-items-center hero-section">
-
-                <div class="col-lg-6">
-                    <h3 class="reveal-left">Hello, It's Me</h3>
-                    <h1 class="heading1 reveal-right">Maaz Ahmed</h1>
-
-                    <h3 class="reveal-lef">
-                        I'm a <span id="typing-text"></span> <span class="cursor">|</span>
-                    </h3>
-                    <audio id="typeSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
-                    <p class="peragraph  reveal-righ">
-                       I am a passionate and innovative web developer on a mission to shape digital experiences that captivate and inspire. With a year of dedicated hands-on experience in the world of web development, I've cultivated a profound love for crafting pixel-perfect, user-centric websites.
-                    </p>
-
-                    <div class="social-icons d-flex">
-                        <a href="#"><i class="bx bxl-github github"></i></a>
-                        <a href="#"><i class="bx bxl-linkedin linkDin"></i></a>
+        </section>
+        <section class="secContainer d-flex align-items-center" id="About">
+            <div class="container sec2">
+                <div class="row align-items-center">
+                    <div class="col-5">
+                        <img src="images/Young man working in home office.png" class="img-fluid sec2img" alt="">
+                    </div>
+                    <div class="col-6 pt-4 mt-4">
+                        <h1 class="sec2header">About <span class="sec2spn">Me</span></h1>
+                        <h3 class="sec2H3 pt-0">Frontend Developer</h3>
+                        <p class="sec2P pt-3">I am a dedicated front-end developer with a genuine passion for crafting
+                            exceptional websites that combine aesthetics and functionality. With a solid background in
+                            HTML, CSS, JavaScript.I have honed my skills over time to create captivating user interfaces
+                            that leave a lasting impression.</p>
+                        <button class="sec2Button">Read More</button>
                     </div>
                 </div>
-
-                <div class="col-lg-6 text-center heroimage p-5 reveal-right">
-                    <img src="images/my-img.png" class="img-fluid floating-img" alt="">
-                </div>
-
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="sec3 d-flex align-items-center" id="Service">
+            <div class="container">
+                <h1 class="sec3h1">My <span class="spn3">Skills</span></h1>
+                <div class=" secColContainer mt-5">
+                    <div class=" sec3Col1 p-4 sec3Col">
+                        <h1 class="fontH1"><i class="fa-solid fa-code" style="color: rgb(99, 230, 190);"></i></h1>
+                        <h1 class="seccol3H1">Front-End</h1>
+                        <h1 class="seccol3H1">Development</h1>
+                        <p class="sec3p"><i>Enthusiastic student specializing in Frontend Development, proficient in
+                                HTML, CSS, JavaScript, and ReactJS. Aiming to leverage these skills to create engaging
+                                and user-friendly web applications that deliver exceptional user experiences.</i></p>
 
-</div>
+                        <div class="d-flex justify-content-center align-items-center ButtonSel3">
 
-<!-- JS -->
-<script>
-const btn = document.getElementById('menuBtn');
-btn.addEventListener('click', () => {
-    btn.classList.toggle('active');
-});
-</script>
+                            <button class="sec3Button py-2"><span>Read</span><span>More</span></button>
+                        </div>
+                    </div>
+                    <div class=" sec3Col2 p-4 sec3Col">
+                        <h1 class="hea32"><i class="fa-solid fa-paintbrush" style="color: rgb(99, 230, 190);"></i></h1>
+                        <h1 class="seccol3H1">Responsive Design</h1>
+                        <p class="sec3p"><i>Adept at creating websites that provide a consistent and optimal viewing
+                                experience across
+                                desktops, tablets, and mobile devices.Familiar with user-centered design principles,
+                                ensuring intuitive navigation and an aesthetically pleasing layout for enhanced user
+                                satisfaction.
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-<script src="app.js"></script>
+                            </i></p>
+                        <div class="d-flex justify-content-center align-items-center ButtonSel3">
+
+                            <button class="sec3Button py-2"><span>Read</span><span>More</span></button>
+                        </div>
+                    </div>
+                    <div class=" sec3Col3 p-4 sec3Col">
+                        <h1 class="hea32"><i class="fa-solid fa-signal" style="color: rgb(99, 230, 190);"></i></h1>
+                        <h1 class="seccol3H1">Problems Solving</h1>
+                        <p class="sec3p">Strong analytical skills for identifying and resolving technical issues,
+                            ensuring smooth functionality and optimal performance.Effective at managing tasks and
+                            meeting deadlines in fast-paced environments, contributing to successful project deliveries
+                        </p>
+                        <div class="d-flex justify-content-center align-items-center ButtonSel3">
+
+                            <button class="sec3Button py-2"><span>Read</span><span>More</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec4" id="Portfolio">
+            <div class="container">
+                <h1 class="sec4H1 py-5">Latest <span class="sec4spn">Project</span></h1>
+                <div class="sec4GridCol pb-5">
+                    <div class="col1"><img src="images/col1-imgs.png" class="img-fluid" alt=""></div>
+                    <div class="col2">2</div>
+                    <div class="col3">3</div>
+                    <div class="col4">4</div>
+                    <div class="col1">1</div>
+                    <div class="col2">2</div>
+                    <div class="col3">3</div>
+                    <div class="col4">4</div>
+                    <div class="col1">1</div>
+                    <div class="col2">2</div>
+                    <div class="col3">3</div>
+                    <div class="col4">4</div>
+                </div>
+            </div>
+        </section>
+        <section class="sec5" id="Contact">
+            <div class="container">
+                <h1 class=" sec5h1 p5">Contact <span class="sec5spn">Me!</span></h1>
+            </div>
+            <section class="contact">
+                <form>
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="number" placeholder="Mobile Number" required>
+                        <input type="text" placeholder="Email Subject" required>
+                    </div>
+
+                    <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </section>
+        </section>
+        <section class="CopyRight ">
+            <p class="container py-4">Copyright © 2026 by Codehal. All Rights Reserved.</p>
+        </section>
+    </div>
+
+    <!-- JS -->
+    <script>
+        const btn = document.getElementById('menuBtn');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('active');
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>

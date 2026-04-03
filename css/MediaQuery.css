@@ -1,61 +1,132 @@
-/* @media (max-width:768px) {
+/* ========================= */
+/* RESPONSIVE (MOBILE + TAB) */
+/* ========================= */
 
+/* Tablet */
+@media (max-width: 992px) {
+
+    .main-section {
+        height: auto; /* fix height issue */
+        /* padding: 60px 0; */
+        text-align: center;
     }
- */
 
- :root {
-  --text-color: #333;
-  --cursor-color: #007bff;
-  --bg-color: #f4f4f4;
+    .heading1 {
+        font-size: 36px;
+    }
+
+    .heroimage {
+        padding: 20px !important;
+    }
+
+    .heroimage img {
+        width: 80%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
 }
 
-body {
-  background-color: var(--bg-color);
-  font-family: 'Poppins', sans-serif;
-}
-.container {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--text-color);
-  display: flex;
+/* Mobile */
+@media (max-width: 576px) {
+
+   
+    .heading {
+        font-size: 22px;
+    }
+
+    .heading1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .peragraph {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .heroimage img {
+        width: 90%;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+
+    /* Navbar spacing */
+    .navbar-nav {
+        gap: 10px;
+        padding-top: 10px;
+    }
 }
 
-.static-text {
-  margin-right: 10px;
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
 }
 
-/* .typing-text {
-  position: relative;
-  color: var(--cursor-color);
-  white-space: nowrap;
-  overflow: hidden; /* Text ko hide karne ke liye */
-  /* border-right: 3px solid var(--cursor-color); Yeh hamara cursor hai */
-  /* width: 0; Shuruat mein width zero hogi */
-  
-  /* Animation combine karna: typing, blinking, aur erasing */
-  /* animation:  */
-    /* typing 4s steps(18) infinite, */
-    /* cursor-blink 0.8s step-end infinite; */
-/* }  */
-.typing-text {
-  position: relative;
-  color: var(--cursor-color);
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid var(--cursor-color);
-  width: 0;
-  animation: typing 4s steps(18) infinite, cursor-blink 0.8s step-end infinite;
+.reveal-left {
+    opacity: 0; /* Shuru mein gayab */
+    transform: translateX(-100px); /* 100px pichay (left side) */
+    animation: moveIn 0.8s ease-out forwards; /* 1.2 seconds mein aayega */
+}
+.reveal-lef {
+    opacity: 0; /* Shuru mein gayab */
+    transform: translateX(-100px); /* 100px pichay (left side) */
+    animation: moveIn 3.2s ease-out forwards; /* 1.2 seconds mein aayega */
+    animation-delay: 0.3s; /* Thoda ruk kar aayega, jo cool lagta hai */
 }
 
-/* Typing aur Erasing ka Logic */
-@keyframes typing {
-  0%, 10% { width: 0; } /* Intezar */
-  40%, 60% { width: 100%; } /* Type ho gaya aur thodi der ruka (yahan cursor blink karega) */
-  90%, 100% { width: 0; } /* Erase ho gaya */
+.reveal-right {
+    opacity: 0; /* Shuru mein gayab */
+    transform: translateX(100px); /* 100px aagay (right side) */
+    animation: moveIn 1.2s ease-out forwards;
+    animation-delay: 0.3s; /* Thoda ruk kar aayega, jo cool lagta hai */
+}
+.reveal-righ {
+    opacity: 0; /* Shuru mein gayab */
+    transform: translateX(100px); /* 100px aagay (right side) */
+    animation: moveIn 2.0s ease-out forwards;
+    animation-delay: 1.2s; /* Thoda ruk kar aayega, jo cool lagta hai */
 }
 
-/* Cursor Blinking ka Logic */
-@keyframes cursor-blink {
-  from, to { border-color: transparent; }
-  50% { border-color: var(--cursor-color); }
+@keyframes moveIn {
+    to {
+        opacity: 1; /* Poora nazar aaye */
+        transform: translateX(0); /* Apni asli jagah (0) par aa jaye */
+    }
+}
+
+
+/* FLOAT IMAGE */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.floating-img {
+    animation: float 4s ease-in-out infinite;
+}
+#typing-text{
+    /* color: #007bff; */
+    color: aqua;
+    font-weight: bold;
+}
+.cursor{
+    /* box-shadow: 0 0 10px aqua; */
+    color: aqua;
+    /* color: #007bff; */
+    font-weight: 100;
+    animation: flash 0.8s infinite;
+}
+@keyframes flash{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
 }
