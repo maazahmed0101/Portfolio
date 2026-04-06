@@ -426,14 +426,27 @@
     /* background: linear-gradient(to top, white, aqua); */
     /* background: rgba(0, 255, 255, 0.5); */
     background: linear-gradient(45deg,  rgba(30, 144, 255, 0.7),  rgba(255,255,255,0.6));
-   
+   text-align: left;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    padding: 15%;
+    /* align-items: center; */
     justify-content: center;
     transform: translateY(100%);
     transition: 0.4s ease-in-out;
 }
-
+.h3cl14{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.h3cl14 i{
+    /* font-weight: bolder; */
+    color: white;
+}
+ .pcl31{
+    font-weight: 200;
+    
+ }
 .col1sec4:hover .overlay,
 .col2:hover .overlay,
 .col3:hover .overlay,
