@@ -438,6 +438,7 @@
 .h3cl14{
     font-weight: bolder;
     font-size: xx-large;
+    color: #000;
 }
 .h3cl14 i{
     /* font-weight: bolder; */
@@ -489,8 +490,8 @@
 }
 
 .sec5 {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: black;
 }
 
@@ -501,15 +502,15 @@
 .sec5h1 {
     color: white;
     padding-top: 10vh;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 50px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     text-align: center;
 }
 
 .CopyRight {
     background-color: #1f242d;
-    width: 100vw;
+    width: 100%;
     font-size: x-large;
     color: white;
     height: 100%;
