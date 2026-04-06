@@ -1,17 +1,18 @@
-/* ========================= */
+/* =========================
 /* RESPONSIVE (MOBILE + TAB) */
 /* ========================= */
 
 /* Tablet */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
 
     .main-section {
         height: auto; /* fix height issue */
-        /* padding: 60px 0; */
-        text-align: center;
-    }
+/* padding-top: 10rem!important;
+        text-align: left;
+    } */
 
-    .heading1 {
+
+/* .heading1 {
         font-size: 36px;
     }
 
@@ -25,16 +26,193 @@
 
     .social-icons {
         justify-content: center;
+    } */
+/* } */
+
+/* @media (max-width: 1009px) {
+   .container, .container-sm {
+        max-width: 980px;
+    }
+} */
+@media (max-width: 611px) {
+    .container {
+        max-width: 490px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .container {
+        max-width: 900px;
+    }
+
+    /* .main-section{
+        padding-left: 1%!important;
+    } */
+}
+@media (max-width: 1150px){
+       .seccl3{
+grid-column: span 2;
+}
+ .secColContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)!important;
+        gap: 4vh;
+        text-align: center;
+    }
+
+}
+@media (max-width: 1050px) {
+    .main-section {
+        padding-left: 2.1%;
+    }
+
+}
+
+@media (max-width: 980px) {
+    .main-section {
+        padding-top: 20%;
+    }
+}
+
+@media (max-width: 980px) {
+    .container {
+        max-width: 830px;
+    }
+
+    .main-section {
+        padding-top: 20%;
+    }
+}
+
+@media (max-width: 910px) {
+    .container {
+        max-width: 770px;
+    }
+}
+
+@media (max-width: 993px) {
+    .main-section {
+        height: 100%;
+        padding-top: 20%;
+    }
+ 
+    .secContainer {
+        height: 100%;
+        padding-top: 39px;
+    }
+
+    .sec3 {
+        height: 100%;
+    }
+
+
+    .sec2Div2 {
+        display: flex;
+        /* gap: 3%; */
+        flex-wrap: wrap-reverse;
+    }
+
+    .p-5 {
+        padding: 0rem !important;
+    }
+
+    .imgContainer {
+        padding-top: 30px;
+    }
+
+    /* .sec1sel{
+        padding-top: 6rem;
+    } */
+    /* .sec1sel {
+        padding-top: 36rem;
+    } */
+
+}
+
+@media (max-width:1180px) {
+    .secColContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4vh;
+        text-align: center;
+    }
+
+    .sec3 {
+        height: 100%;
+    }
+}
+
+@media (max-width: 840px) {
+    .container {
+        max-width: 710px;
+    }
+}
+
+@media (max-width: 780px) {
+    .container {
+        max-width: 630px;
+    }
+}
+
+@media (max-width: 740px) {
+    .container {
+        max-width: 590px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        max-width: 510px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 460px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        max-width: 410px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 360px;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        max-width: 310px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 350px) {
+    .container {
+        max-width: 240px;
     }
 }
 
 /* Mobile */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
 
    
-    .heading {
-        font-size: 22px;
-    }
+
 
     .heading1 {
         font-size: 28px;
@@ -58,75 +236,117 @@
     }
 
     /* Navbar spacing */
-    .navbar-nav {
+/* .navbar-nav {
         gap: 10px;
         padding-top: 10px;
-    }
-}
+    } */
+/* } */
 
 .hero-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .reveal-left {
-    opacity: 0; /* Shuru mein gayab */
-    transform: translateX(-100px); /* 100px pichay (left side) */
-    animation: moveIn 0.8s ease-out forwards; /* 1.2 seconds mein aayega */
+    opacity: 0;
+    /* Shuru mein gayab */
+    transform: translateX(-100px);
+    /* 100px pichay (left side) */
+    animation: moveIn 0.8s ease-out forwards;
+    /* 1.2 seconds mein aayega */
 }
+
 .reveal-lef {
-    opacity: 0; /* Shuru mein gayab */
-    transform: translateX(-100px); /* 100px pichay (left side) */
-    animation: moveIn 3.2s ease-out forwards; /* 1.2 seconds mein aayega */
-    animation-delay: 0.3s; /* Thoda ruk kar aayega, jo cool lagta hai */
+    opacity: 0;
+    /* Shuru mein gayab */
+    transform: translateX(-100px);
+    /* 100px pichay (left side) */
+    animation: moveIn 3.2s ease-out forwards;
+    /* 1.2 seconds mein aayega */
+    animation-delay: 0.3s;
+    /* Thoda ruk kar aayega, jo cool lagta hai */
 }
 
 .reveal-right {
-    opacity: 0; /* Shuru mein gayab */
-    transform: translateX(100px); /* 100px aagay (right side) */
+    opacity: 0;
+    /* Shuru mein gayab */
+    transform: translateX(100px);
+    /* 100px aagay (right side) */
     animation: moveIn 1.2s ease-out forwards;
-    animation-delay: 0.3s; /* Thoda ruk kar aayega, jo cool lagta hai */
+    animation-delay: 0.3s;
+    /* Thoda ruk kar aayega, jo cool lagta hai */
 }
+
+.reveal-right {
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
 .reveal-righ {
-    opacity: 0; /* Shuru mein gayab */
-    transform: translateX(100px); /* 100px aagay (right side) */
+    opacity: 0;
+    /* Shuru mein gayab */
+    transform: translateX(100px);
+    /* 100px aagay (right side) */
     animation: moveIn 2.0s ease-out forwards;
-    animation-delay: 1.2s; /* Thoda ruk kar aayega, jo cool lagta hai */
+    animation-delay: 1.2s;
+    /* Thoda ruk kar aayega, jo cool lagta hai */
 }
 
 @keyframes moveIn {
     to {
-        opacity: 1; /* Poora nazar aaye */
-        transform: translateX(0); /* Apni asli jagah (0) par aa jaye */
+        opacity: 1;
+        /* Poora nazar aaye */
+        transform: translateX(0);
+        /* Apni asli jagah (0) par aa jaye */
     }
 }
 
 
 /* FLOAT IMAGE */
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .floating-img {
     animation: float 4s ease-in-out infinite;
+    height: 70vh;
 }
-#typing-text{
+
+#typing-text {
     /* color: #007bff; */
-    color: aqua;
+    color: #0ef;
     font-weight: bold;
 }
-.cursor{
+
+.cursor {
     /* box-shadow: 0 0 10px aqua; */
-    color: aqua;
+    color: #0ef;
     /* color: #007bff; */
     font-weight: 100;
     animation: flash 0.8s infinite;
 }
-@keyframes flash{
-    0%{opacity: 1;}
-    50%{opacity: 0;}
-    100%{opacity: 1;}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

@@ -27,11 +27,13 @@
 
     <div class="container-fluid p-0">
 
+        
         <!-- HEADER -->
         <header class="header ">
             <nav class="navbar navbar-expand-lg container">
 
-                <a class="navbar-brand heading" href="#">Portfolio</a>
+                <!-- <a class="navbar-brand heading" href="#">Portfolio</a> -->
+                 <h2 class="headerH21">Portfolio</h2>
 
                 <button class="navbar-toggler" id="menuBtn" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span></span>
@@ -41,7 +43,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto text-center headerLi">
-                        <li class="nav-item"><a class="nav-link active" href="#Home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" active href="#Home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#Service">Service</a></li>
                         <li class="nav-item"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
@@ -53,8 +55,8 @@
         </header>
 
         <!-- SECTION -->
-        <section class="main-section d-flex align-items-center" id="Home">
-            <div class="container d-flex align-items-center p-0">
+        <section class="main-section d-flex align-items-center sec1sel" id="Home">
+            <div class="container d-flex align-items-center p-0 secOK1">
                 <div class="row align-items-center hero-section ">
 
                     <div class="col-lg-6">
@@ -86,13 +88,13 @@
                 </div>
             </div>
         </section>
-        <section class="secContainer d-flex align-items-center" id="About">
+          <section class="secContainer d-flex align-items-center" id="About">
             <div class="container sec2">
-                <div class="row align-items-center">
-                    <div class="col-5">
+                <div class="row  sec2Div2">
+                    <div class="col-lg-5 imgContainer mb-3 m-lg-0 col-12">
                         <img src="images/Young man working in home office.png" class="img-fluid sec2img" alt="">
                     </div>
-                    <div class="col-6 pt-4 mt-4">
+                    <div class="col-lg-6 col-12 TextAreaOf2 mt-4">
                         <h1 class="sec2header">About <span class="sec2spn">Me</span></h1>
                         <h3 class="sec2H3 pt-0">Frontend Developer</h3>
                         <p class="sec2P pt-3">I am a dedicated front-end developer with a genuine passion for crafting
@@ -103,18 +105,18 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="sec3 d-flex align-items-center" id="Service">
+        </section> 
+          <section class="sec3 d-flex align-items-center pb-5" id="Service">
             <div class="container">
-                <h1 class="sec3h1">My <span class="spn3">Skills</span></h1>
+                <h1 class="sec3h1 pt-5">My <span class="spn3">Skills</span></h1>
                 <div class=" secColContainer mt-5">
                     <div class=" sec3Col1 p-4 sec3Col">
                         <h1 class="fontH1"><i class="fa-solid fa-code" style="color: rgb(99, 230, 190);"></i></h1>
                         <h1 class="seccol3H1">Front-End</h1>
-                        <h1 class="seccol3H1">Development</h1>
-                        <p class="sec3p"><i>Enthusiastic student specializing in Frontend Development, proficient in
+                        <h1 class="seccol3H1 pb-3">Development</h1>
+                        <p class="sec3p">Enthusiastic student specializing in Frontend Development, proficient in
                                 HTML, CSS, JavaScript, and ReactJS. Aiming to leverage these skills to create engaging
-                                and user-friendly web applications that deliver exceptional user experiences.</i></p>
+                                and user-friendly web applications that deliver exceptional user experiences.</p>
 
                         <div class="d-flex justify-content-center align-items-center ButtonSel3">
 
@@ -123,22 +125,22 @@
                     </div>
                     <div class=" sec3Col2 p-4 sec3Col">
                         <h1 class="hea32"><i class="fa-solid fa-paintbrush" style="color: rgb(99, 230, 190);"></i></h1>
-                        <h1 class="seccol3H1">Responsive Design</h1>
-                        <p class="sec3p"><i>Adept at creating websites that provide a consistent and optimal viewing
+                        <h1 class="seccol3H1 pb-2">Responsive</h1> <h1 class="seccol3H1 pb-3">Design</h1>
+                        <p class="sec3p">Adept at creating websites that provide a consistent and optimal viewing
                                 experience across
                                 desktops, tablets, and mobile devices.Familiar with user-centered design principles,
                                 ensuring intuitive navigation and an aesthetically pleasing layout for enhanced user
                                 satisfaction.
 
-                            </i></p>
-                        <div class="d-flex justify-content-center align-items-center ButtonSel3">
+                            </p>
+                        <div class="d-flex justify-content-center align-items-center  ButtonSel32">
 
-                            <button class="sec3Button py-2"><span>Read</span><span>More</span></button>
+                            <button class="sec3Button py-2 "><span>Read</span><span>More</span></button>
                         </div>
                     </div>
-                    <div class=" sec3Col3 p-4 sec3Col">
+                    <div class=" sec3Col3 seccl3 p-4 sec3Col">
                         <h1 class="hea32"><i class="fa-solid fa-signal" style="color: rgb(99, 230, 190);"></i></h1>
-                        <h1 class="seccol3H1">Problems Solving</h1>
+                        <h1 class="seccol3H1">Problems</h1><h1 class="seccol3H1 pb-3"> Solving</h1>
                         <p class="sec3p">Strong analytical skills for identifying and resolving technical issues,
                             ensuring smooth functionality and optimal performance.Effective at managing tasks and
                             meeting deadlines in fast-paced environments, contributing to successful project deliveries
@@ -150,8 +152,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="sec4" id="Portfolio">
+        </section>  
+         <!-- <section class="sec4" id="Portfolio">
             <div class="container">
                 <h1 class="sec4H1 py-5">Latest <span class="sec4spn">Project</span></h1>
                 <div class="sec4GridCol pb-5">
@@ -169,8 +171,8 @@
                     <div class="col4">4</div>
                 </div>
             </div>
-        </section>
-        <section class="sec5" id="Contact">
+        </section> -->
+         <!-- <section class="sec5" id="Contact">
             <div class="container">
                 <h1 class=" sec5h1 p5">Contact <span class="sec5spn">Me!</span></h1>
             </div>
@@ -191,10 +193,10 @@
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </section>
-        </section>
-        <section class="CopyRight ">
+        </section>  -->
+        <!-- <section class="CopyRight ">
             <p class="container py-4">Copyright © 2026 by Codehal. All Rights Reserved.</p>
-        </section>
+        </section> -->
     </div>
 
     <!-- JS -->
