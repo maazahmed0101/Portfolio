@@ -26,3 +26,46 @@ function type() {
     setTimeout(type, typeSpeed)
 }
 type()
+
+
+(function(){
+    emailjs.init("TyHmMX8WhakS1cBwa");
+})();
+
+const form = document.getElementById("contact-form");
+const btn = document.getElementById("sendBtn");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    // 🔥 Loading state
+    btn.innerText = "Sending...";
+    btn.disabled = true;
+
+    emailjs.sendForm("service_2o12paq", "template_8oyy2zb", this)
+    .then(function(){
+        // ✅ Success popup
+        Swal.fire({
+            title: "Message Sent!",
+            text: "Your message has been delivered successfully 🚀",
+            icon: "success",
+            confirmButtonColor: "#0ef"
+        });
+
+        form.reset();
+
+        btn.innerText = "Send Message";
+        btn.disabled = false;
+
+    }, function(error){
+        // ❌ Error popup
+        Swal.fire({
+            title: "Error!",
+            text: "Something went wrong 😢",
+            icon: "error"
+        });
+
+        btn.innerText = "Send Message";
+        btn.disabled = false;
+    });
+});
