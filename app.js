@@ -1,3 +1,8 @@
+
+
+
+
+
 const words = ['Web Developer','Frontend Developer', 'Freelancer']
 let wordIndex = 0;
 let charIndex = 0;
@@ -27,6 +32,26 @@ function type() {
 }
 type()
 
+// main work
+ const btns = document.getElementById('menuBtn');
+        btns.addEventListener('click', () => {
+            btns.classList.toggle('active');
+        });
+    
+        (function () {
+            emailjs.init("TyHmMX8WhakS1cBwa");
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm("service_2o12paq", "template_8oyy2zb", this)
+                .then(function () {
+                    alert("✅ Message Sent Successfully!");
+                }, function (error) {
+                    alert("❌ Failed: " + error);
+                });
+        });
 
 (function(){
     emailjs.init("TyHmMX8WhakS1cBwa");
@@ -89,3 +114,6 @@ form.addEventListener("submit", function(e){
                     alert("❌ Failed: " + error);
                 });
         });
+
+
+
