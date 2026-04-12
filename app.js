@@ -69,3 +69,23 @@ form.addEventListener("submit", function(e){
         btn.disabled = false;
     });
 });
+
+ btn = document.getElementById('menuBtn');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('active');
+        });
+    
+        (function () {
+            emailjs.init("TyHmMX8WhakS1cBwa");
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm("service_2o12paq", "template_8oyy2zb", this)
+                .then(function () {
+                    alert("✅ Message Sent Successfully!");
+                }, function (error) {
+                    alert("❌ Failed: " + error);
+                });
+        });
