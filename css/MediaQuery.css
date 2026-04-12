@@ -50,19 +50,19 @@
     } */
 }
 @media (max-width: 1200px){
-       .seccl3{
+       /* .seccl3{
 grid-column: span 2;
-}
+} */
 .ButtonSel321{
     padding-bottom: 40px;
 }
- .secColContainer {
+ /* .secColContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr)!important;
         gap: 4vh;
         text-align: center;
     }
-    
+     */
 }
 @media (max-width:1200px){
 
@@ -307,7 +307,7 @@ padding: 40px;
 }
 
 .reveal-right {
-    overflow: hidden;
+    /* overflow: hidden; */
     object-fit: cover;
     object-position: center;
 }
