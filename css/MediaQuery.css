@@ -45,18 +45,25 @@
         max-width: 900px;
     }
 
+    .selcollg6 {
+        padding-left: 14px;
+    }
+
     /* .main-section{
         padding-left: 1%!important;
     } */
 }
-@media (max-width: 1200px){
-       /* .seccl3{
+
+@media (max-width: 1200px) {
+
+    /* .seccl3{
 grid-column: span 2;
 } */
-.ButtonSel321{
-    padding-bottom: 40px;
-}
- /* .secColContainer {
+    .ButtonSel321 {
+        padding-bottom: 40px;
+    }
+
+    /* .secColContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr)!important;
         gap: 4vh;
@@ -64,15 +71,17 @@ grid-column: span 2;
     }
      */
 }
-@media (max-width:1200px){
+
+@media (max-width:1000px) {
 
     .sec4GridCol {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    color: white;
-    gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        color: white;
+        gap: 20px;
     }
 }
+
 @media (max-width: 1050px) {
     .main-section {
         padding-left: 2.1%;
@@ -81,27 +90,31 @@ grid-column: span 2;
 }
 
 @media (max-width: 980px) {
-    .main-section {
+    /* .main-section {
         padding-top: 20%;
-    }
+    } */
 }
 
 @media (max-width: 980px) {
     .container {
         max-width: 830px;
     }
+
     .ButtonSel32 {
-padding: 40px;
+        padding: 40px;
     }
-.sec3Col1{
-    grid-column: span 2;
-}
-.sec3Col2{
-    grid-column: span 2;
-}
-    .main-section {
+
+    /* .sec3Col1 {
+        grid-column: span 2;
+    } */
+
+    /* .sec3Col2 {
+        grid-column: span 2;
+    } */
+
+    /* .main-section {
         padding-top: 20%;
-    }
+    } */
 
 }
 
@@ -111,19 +124,39 @@ padding: 40px;
     }
 }
 
+@media (max-width: 755px) {
+
+    /* .secColContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        gap: 4vh;
+        text-align: center;
+    } */
+    /* .sec3Col3 {
+        grid-column: span 2;
+    } */
+    .sec3Col {
+        grid-column: span 2;
+    }
+}
+
 @media (max-width: 993px) {
     .main-section {
         height: 100%;
         padding-top: 20%;
     }
- 
+
+    .sec3Col3 {
+        grid-column: span 2;
+    }
+
     .secContainer {
         height: 100%;
         padding-top: 39px;
     }
 
     .sec3 {
-        height: 100%;
+        min-height: var(--fixed-vh);
     }
 
 
@@ -150,16 +183,16 @@ padding: 40px;
 
 }
 
-@media (max-width:1180px) {
+@media (max-width:1020px) {
     .secColContainer {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
         gap: 4vh;
         text-align: center;
     }
 
     .sec3 {
-        height: 100%;
+        min-height: var(--fixed-vh);
     }
 }
 
@@ -173,11 +206,12 @@ padding: 40px;
     .container {
         max-width: 630px;
     }
+
     .sec4GridCol {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    color: white;
-    gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        color: white;
+        gap: 20px;
     }
 }
 
@@ -223,15 +257,81 @@ padding: 40px;
     }
 }
 
-@media (max-width: 400px) {
-    .container {
+@media (max-width: 425px) {
+
+    /* .container {
         max-width: 260px;
+    } */
+    .fontH1 i {
+        margin-top: 0px;
+        color: #0ef !important;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    .sec3Col1 {
+        padding-top: 15px !important;
+    }
+
+    .selh3secsel {
+        font-size: 1.4rem !important;
+        font-weight: bolder;
+    }
+
+    .sec3p {
+        /* text-align: justify; */
+        font-size: 13px;
+        font-weight: 500;
+        text-align: left;
+        line-height: 1.6;
+        letter-spacing: 0.3px;
+        word-spacing: 1px;
+    }
+
+    .sec3Col2 {
+        padding-top: 15px !important;
+    }
+
+    .sec3Col3 {
+        padding-top: 15px !important;
+    }
+
+    .sec3Button {
+        width: 100px;
     }
 }
 
 @media (max-width: 350px) {
     .container {
-        max-width: 240px;
+        max-width: 280px;
+    }
+
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    @media (max-width: 992px) {
+        .secContainer {
+            min-height: auto;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .sec2img {
+            max-width: 300px;
+        }
+    }
+
+    #typing-text {
+        font-size: 21px !important;
+    }
+
+    .reveal-righ {
+        font-size: 38px;
+    }
+
+    .selcollg6 {
+        padding-left: 20px;
     }
 }
 

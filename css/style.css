@@ -1,5 +1,6 @@
 :root {
     --cursor-color: #007bff;
+    --fixed-vh: 800px;
 }
 
 /* RESET */
@@ -9,8 +10,12 @@
     box-sizing: border-box;
     text-decoration: none !important;
     /* font-family: 'Poppins', sans-serif; */
-    font-family: cursive, 'Poppins', sans-serif;
+    /* font-family: cursive, 'Poppins', sans-serif; */
     user-select: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
 }
 
 /* HEADER */
@@ -24,9 +29,17 @@
     /* position: absolute; */
 }
 
+.reveal-righ {
+    font-family: 'Poppins', sans-serif;
+}
+
 .p2 {
     background-size: cover;
     height: 100%;
+}
+
+.selcollg6 {
+    padding-left: 1.4rem;
 }
 
 /* .headerUl{
@@ -81,30 +94,18 @@
     font-size: 43px;
 }
 
-.secOK1 {
-    padding-top: 20%;
-}
+/* .secOK1 {
+    /* height: 100vh; */
+    /* padding-top: 40px !important;
+    padding-bottom: 30px !important;
+} */ 
 
 /* SECTION */
 .main-section {
     background: #1f242d;
     color: white;
-    /* display: flex; */
-    /* height: 100%; */
-     /* padding: 100px 20px; */
-padding-top: 50px;
-    /* height: 100vh; */
-    /* display: flex;
-    align-items: center; */
-    /* padding-left: 1.3%;
-    padding-top: 30px; */
-    /* padding-bottom: 10%; */
-    /* padding-bottom: ; */
-    /* padding-top: 0px!important; */
-    /* width: 100vw; */
-    /* aspect-ratio: 1/1; */
-
-    /* padding: 80px 0; */
+    /* padding-top: 50px; */
+    min-height: var(--fixed-vh);
 }
 
 .headerH21 {
@@ -119,9 +120,7 @@ padding-top: 50px;
 
 /* PARAGRAPH */
 .peragraph {
-    line-height: 1.6;
-    /* text-align: justify; */
-    /* text-align-last: center; */
+    line-height: 1.6rem;
 }
 
 /* SOCIAL ICONS */
@@ -154,7 +153,9 @@ padding-top: 50px;
 }
 
 .heroimage img {
-    overflow: hidden;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
     /* width: 75%; */
 }
 
@@ -202,12 +203,28 @@ padding-top: 50px;
     display: flex;
     flex-wrap: wrap-reverse;
 } */
-.secContainer {
-    background-color: #323946;
-    width: 100%;
-    /* height: 100vh; */
+.sec2Div2 {
+    align-items: center;
 }
 
+.secContainer {
+    min-height: var(--fixed-vh);
+    display: flex;
+    align-items: center;
+
+    /* padding-top: 80px;
+    padding-bottom: 180px; */
+    /* height: 200%; */
+}
+
+.cf2sec {
+    background-color: #323946;
+
+}
+
+/* .sec2{
+    height: 100vh;
+} */
 .imgContainer {
     display: flex;
     justify-content: center;
@@ -238,11 +255,21 @@ padding-top: 50px;
     color: #0ef;
 }
 
+/* .sec2img {
+    max-width: 100%;
+    height: auto;
+    } */
 .sec2img {
-    width: 60vh;
+    object-fit: contain;
+    max-width: 420px;
+    /* image ki limit */
+    width: 100%;
+    /* responsive */
+    height: auto;
 }
 
-.sec2H3 {
+
+ .sec2H3 {
     color: white;
     font-size: 30px;
     font-weight: bold;
@@ -250,7 +277,7 @@ padding-top: 50px;
 
 .sec2P {
     color: white;
-    /* text-align: justify; */
+    /* text-align: justify; */ 
 }
 
 .sec2Button {
@@ -287,7 +314,7 @@ padding-top: 50px;
 }
 
 .sec3Col1 {
-    height: 100%;
+    /* height: auto; */
     background-color: #323946;
     border-radius: 35px;
     /* border-style: solid;
@@ -332,15 +359,18 @@ padding-top: 50px;
 
 .sec3p {
     /* text-align: justify; */
-    font-size: 18px;
-    font-weight: 500;
+    /* font-size: 18px; */
+    /* font-weight: 500; */
     text-align: left;
-    line-height: 1.6;
-    letter-spacing: 0.3px;
-    word-spacing: 1px;
+    /* line-height: 1.6; */
+    /* letter-spacing: 0.3px; */
+    /* word-spacing: 1px; */
 }
 
-
+.selh3secsel{
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
 
 .seccol3H1 {
     font-size: 43px;
@@ -369,14 +399,19 @@ padding-top: 50px;
 .sec3Button:hover {
     box-shadow: 0 0 0px #0ef;
 }
-
+.dfdccte{
+    flex-direction: column;
+}
 .sec4 {
     height: 100%;
     /* width: 100vw; */
     color: white;
     background-color: #1f242d;
 }
-
+.respam{
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
 .sec4spn {
     color: #0ef;
 }
@@ -480,6 +515,7 @@ padding-top: 50px;
 .ovls {
     backdrop-filter: blur(2px);
 }
+
 .col1sec4 img {
     width: 100%;
     height: 100%;
