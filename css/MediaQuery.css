@@ -206,7 +206,13 @@ grid-column: span 2;
     .container {
         max-width: 630px;
     }
-
+.h3cl14 {
+    font-size: xx-large;
+}
+.pcl31 {
+    font-size: 27px;
+    margin-bottom: 20px!important;
+}
     .sec4GridCol {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -219,6 +225,10 @@ grid-column: span 2;
     .container {
         max-width: 590px;
     }
+    .pcl31 {
+    /* font-size: 27px; */
+    margin-bottom: 1px!important;
+}
 }
 
 @media (max-width: 700px) {
@@ -231,6 +241,14 @@ grid-column: span 2;
     .container {
         max-width: 510px;
     }
+    .h3cl14 {
+    font-size: medium;
+}
+.pcl31 {
+    font-size: 14px;
+    margin-bottom: 5px!important;
+}
+
 }
 
 @media (max-width: 600px) {
@@ -258,7 +276,9 @@ grid-column: span 2;
 }
 
 @media (max-width: 425px) {
-
+.latlin{
+    font-size: medium;
+}
     /* .container {
         max-width: 260px;
     } */
@@ -304,6 +324,13 @@ grid-column: span 2;
 @media (max-width: 350px) {
     .container {
         max-width: 280px;
+        /* .h3cl14 {
+    font-size: ;
+} */
+.pcl31 {
+    font-size: 12px;
+    margin-bottom: 8px!important;
+}
     }
 
     * {
