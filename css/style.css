@@ -2,7 +2,18 @@
     --cursor-color: #007bff;
     --fixed-vh: 800px;
 }
-
+.github{
+  opacity: 0;
+  transform: translateY(50px);
+}
+.linkDin{
+  opacity: 0;
+  transform: translateY(50px);
+}
+.headerBtn{
+  opacity: 0;
+  transform: translateY(50px);
+}
 /* RESET */
 * {
     margin: 0;

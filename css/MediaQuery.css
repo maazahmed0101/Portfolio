@@ -426,10 +426,10 @@ grid-column: span 2;
 .reveal-right {
     opacity: 0;
     /* Shuru mein gayab */
-    transform: translateX(100px);
+    transform: translateX(80px);
     /* 100px aagay (right side) */
-    animation: moveIn 1.2s ease-out forwards;
-    animation-delay: 0.3s;
+    animation: moveIn 1.7s ease-out forwards;
+    animation-delay: 6.3s;
     /* Thoda ruk kar aayega, jo cool lagta hai */
 }
 
@@ -445,7 +445,7 @@ grid-column: span 2;
     transform: translateX(100px);
     /* 100px aagay (right side) */
     animation: moveIn 2.0s ease-out forwards;
-    animation-delay: 1.2s;
+    animation-delay: 6.0s;
     /* Thoda ruk kar aayega, jo cool lagta hai */
 }
 
